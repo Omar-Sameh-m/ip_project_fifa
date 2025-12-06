@@ -60,7 +60,7 @@ body {
 
 .hover-effect:hover {
     transform: scale(1.1) rotate(0deg) ; 
-    z-index: 50; 
+    z-index: 10; 
     box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
