@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Coralando</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("photo_2025-12-05_18-19-24.jpg") no-repeat center center/cover;
+
+            color: #fff;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        .app-name {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+      
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-login {
+            background-color: #fff;
+            color: #171f69;
+        }
+
+        .btn-login:hover {
+            background-color: #1a1147;
+            color: #fff;
+        }
+
+        .btn-continue {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .btn-continue:hover {
+            background-color: #060469;
+            color: #c9c1dc;
+        }
+
+    
+        .buttons .btn {
+            opacity: 0;
+            animation: fadeInButtons 2s forwards;
+            animation-delay: 2s;
+        }
+
+        @keyframes fadeInButtons {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-name">coralando</div>
+    <div class="buttons">
+       
+        <div class="buttons">
+  
+    <button class="btn btn-login" onclick="location.href='in.html'">Login</button>
+     <button class="btn btn-continue" onclick="location.href='home.html'">Continue without sign in</button>
+</div>
+
+    </div>
+</body>
+</html>

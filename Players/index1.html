@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Players</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <style>
-body {
-    margin: 0;
-    padding: 0;
-    background-image:url("sta.jpg");
-    background-size: cover;
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-    
+       
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("sta.jpg");
+        background-size: cover;
+        min-height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
 
-    .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* كل صف فيه بوكسين */
-    gap: 40px; /* المسافة بين البوكسات */
-}
+        .container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 30px auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* كل صف فيه بوكسين */
+          gap: 40px; /* المسافة بين البوكسات */
+        }
+      }
+    </style>
+  </head>
 
-}
-</style>
-
-</head>
-
-<body>
-
-    <h1 class="title">Choose your player</h1>
+  <body>
+    <h1 style="text-align: center;" class="title">Choose your player</h1>
 
     <div class="container">
+      <div class="box">
+        <img
+          src="../assets/omar_sameh_pics/omar_sameh_FIFA_card.png"
+          alt="Player 1"
+          width="250"
+          height="250"
+        />
+        <a href="/profiles_pages/omar_sameh.html"><button>Go</button></a>
+      </div>
 
-        <div class="box">
-            <img src="../resources/omar h.png" alt="Player 1" width="250" height="250">
-            <button>Proceed</button>
-        </div>
+      <div class="box">
+        <img
+          src="../assets/omar_hamada_pics/omar_hamada_FIFA_card.png"
+          alt="Player 2"
+          width="250"
+          height="250"
+        />
+        <a href="/profiles_pages/omar_hamada.html"><button>Go</button></a>
+      </div>
 
-        <div class="box">
-            <img src="../resources/shahd.png" alt="Player 2" width="250" height="250">
-            <button>Proceed</button>
-        </div>
+      <div class="box">
+        <img
+          src="../assets/shahd_pics/shahd_FIFA_card.png"
+          alt="Player 3"
+          width="250"
+          height="250"
+        />
+        <a href="/profiles_pages/shahd.html"><button>Go</button></a>
+      </div>
 
-        <div class="box">
-            <img src="../resources/omar_sameh_FIFA_card.png" alt="Player 3" width="250" height="250">
-            <button>Proceed</button>
-        </div>
-
-        <div class="box">
-            <img src="../resources/salma_fifa_card.png" alt="Player 4" width="250" height="250">
-            <button>Proceed</button>
-        </div>
-
+      <div class="box">
+        <img
+          src="../assets/slama_pics/salma_FIFA_card.png"
+          alt="Player 4"
+          width="250"
+          height="250"
+        />
+        <a href="/profiles_pages/salma.html"><button>Go</button></a>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
